@@ -12,5 +12,5 @@ export function StorageStack({ stack, app }: StackContext) {
 
     return {
         table
-    }
+    };
 }

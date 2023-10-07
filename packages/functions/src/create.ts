@@ -1,4 +1,4 @@
-import * as uuid from "uuid";
+import { v4 as uuidv4 } from 'uuid'
 import AWS from "aws-sdk";
 import{ Table } from "sst/node/table";
 import { APIGatewayProxyHandlerV2 } from "aws-lambda";
@@ -12,7 +12,7 @@ export const main: APIGatewayProxyHandlerV2 = async (_evt) => {
   const params = {
     TableName: Table.Users.tableName,
     Item: {
-      id: uuid.v4(),
+      id: uuidv4(),
       email: data.email,
       name: data.name,
       createdAt: Date.now()
