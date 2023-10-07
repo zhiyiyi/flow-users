@@ -1,0 +1,11 @@
+{
+  "name": "web-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "sst bind react-scripts start"
+  },
+  "devDependencies": {
+    "sst": "^2.28.1"
+  }
+}
